@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <com.github.rongi.rotate_layout.layout.RotateLayout
+        android:id="@+id/rotateLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:angle="150"
@@ -25,6 +26,7 @@
 
 
     <com.github.rongi.rotate_layout.layout.RotateLayout
+        android:id="@+id/rotateLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:angle="45"
@@ -44,15 +46,18 @@
 
     <ImageView
         android:id="@+id/imageEarth"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_width="380dp"
+        android:layout_height="458dp"
         android:src="@drawable/earth"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="149dp" />
 
     <Button
         android:id="@+id/startAnimation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:background="@color/light_blue"
         android:text="Start"
         android:textColor="@color/white"
@@ -65,6 +70,8 @@
         android:id="@+id/stopAnimation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
         android:background="@color/light_blue"
         android:text="Stop"
         android:textColor="@color/white"
@@ -72,5 +79,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageEarth"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imagemoon"
+        android:layout_width="126dp"
+        android:layout_height="115dp"
+        android:src="@drawable/moon1"
+        app:layout_constraintBottom_toTopOf="@+id/imageEarth"
+        app:layout_constraintEnd_toStartOf="@+id/rotateLayout2"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/rotateLayout"
+        app:srcCompat="@drawable/moon1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

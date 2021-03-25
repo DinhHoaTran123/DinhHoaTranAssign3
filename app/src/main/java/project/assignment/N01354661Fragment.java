@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class N01354661Fragment extends Fragment {
-    private ImageView imageView;
+    private ImageView imageView, moon;
     private Button btnStart, btnStop;
 
     @Nullable
@@ -26,11 +26,9 @@ public class N01354661Fragment extends Fragment {
     }
 
     private void initView(View view) {
-        imageView = view.findViewById(R.id.imageEarth);
+        imageView = view.findViewById(R.id.imagemoon);
         btnStart = view.findViewById(R.id.startAnimation);
         btnStop = view.findViewById(R.id.stopAnimation);
-
-
     }
 
     private void startRotateAnimation(Boolean check) {
@@ -59,13 +57,18 @@ public class N01354661Fragment extends Fragment {
             imageView.setAnimation(null);
         }
     }
+    private void startTranslateAnimation() {
+        moon = (imageView).findViewById(R.id.imagemoon);
+
+        Animation moona = AnimationUtils.loadAnimation(getActivity(),R.anim.translate_animation);
+        moon.startAnimation(moona);
+    }
 
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         btnStart.setOnClickListener(view1 -> startTranslateAnimation(true));
-
         btnStop.setOnClickListener(view12 -> startTranslateAnimation(false));
 
     }
