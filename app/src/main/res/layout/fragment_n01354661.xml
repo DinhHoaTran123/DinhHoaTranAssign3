@@ -82,13 +82,14 @@
 
     <ImageView
         android:id="@+id/imagemoon"
-        android:layout_width="126dp"
-        android:layout_height="115dp"
-        android:src="@drawable/moon1"
-        app:layout_constraintBottom_toTopOf="@+id/imageEarth"
-        app:layout_constraintEnd_toStartOf="@+id/rotateLayout2"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/rotateLayout"
-        app:srcCompat="@drawable/moon1" />
+        android:layout_width="136dp"
+        android:layout_height="98dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        app:srcCompat="@drawable/moon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
