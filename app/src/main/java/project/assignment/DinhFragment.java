@@ -84,34 +84,25 @@ public class DinhFragment extends Fragment {
             }
         });
 
-        buttonGreen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                path2.reset();
-                view.invalidate();
-                drawerLine(requireActivity().getColor(R.color.green), 10);
-                checkColor = 1;
-            }
+        buttonGreen.setOnClickListener(v -> {
+            path2.reset();
+            view.invalidate();
+            drawerLine(requireActivity().getColor(R.color.green), 10);
+            checkColor = 1;
         });
 
-        buttonBlue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                path2.reset();
-                view.invalidate();
-                drawerLine(requireActivity().getColor(R.color.blue), 15);
-                checkColor = 2;
-            }
+        buttonBlue.setOnClickListener(v -> {
+            path2.reset();
+            view.invalidate();
+            drawerLine(requireActivity().getColor(R.color.blue), 15);
+            checkColor = 2;
         });
 
-        buttonPink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                path2.reset();
-                view.invalidate();
-                drawerLine(requireActivity().getColor(R.color.pink), 20);
-                checkColor = 3 ;
-            }
+        buttonPink.setOnClickListener(v -> {
+            path2.reset();
+            view.invalidate();
+            drawerLine(requireActivity().getColor(R.color.pink), 20);
+            checkColor = 3 ;
         });
 
     }
