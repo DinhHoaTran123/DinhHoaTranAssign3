@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    DinhHoaTran - n01354661-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DinhHoaTrann01354661</string>
+    <string name="firt_name">Dinh</string>
+    <string name="last_name">Hoa</string>
+    <string name="student_id">n01354661</string>
+    <string name="runtime">autorisation d\'exécution</string>
+    <string name="duration_200">200s</string>
+    <string name="duration_400">400s</string>
+    <string name="duration_600">600s</string>
+    <string name="duration_800">800s</string>
+    <string name="denied">permission refusée</string>
+</resources>

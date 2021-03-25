@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_firt_name"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/firt_name"/>
+
+    <item
+        android:id="@+id/navigation_last_name"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/last_name"/>
+
+    <item
+        android:id="@+id/navigation_student_id"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/student_id"/>
+</menu>
