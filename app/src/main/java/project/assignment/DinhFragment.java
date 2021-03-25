@@ -64,7 +64,7 @@ public class DinhFragment extends Fragment {
                 Log.d("CheckColor", String.valueOf(checkColor));
                 switch (checkColor){
                     case  0 : {
-                        drawerLine(requireActivity().getColor(R.color.black), 1);
+                        drawerLine(requireActivity().getColor(R.color.black), 5);
                         break;
                     }
                     case  1 : {

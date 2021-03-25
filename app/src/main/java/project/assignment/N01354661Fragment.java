@@ -20,7 +20,7 @@ public class N01354661Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_n01254661, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_n01354661, container, false);
         initView(rootView);
         return rootView;
     }
