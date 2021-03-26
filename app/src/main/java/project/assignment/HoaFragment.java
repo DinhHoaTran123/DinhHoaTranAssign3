@@ -79,6 +79,10 @@ public class HoaFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 switch (check){
+                    default: {
+                        startDuration(500);
+                        break;
+                    }
                     case 1 : {
                         startDuration(200);
                         break;
@@ -101,6 +105,10 @@ public class HoaFragment extends Fragment {
         buttonStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(animDrawable == null)
+                {
+                }
+                else
                 animDrawable.stop();
             }
         });
