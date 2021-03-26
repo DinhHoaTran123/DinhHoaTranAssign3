@@ -30,6 +30,10 @@ public class PaintLine extends View implements OnTouchListener {
 
     private static final float TOUCH_TOLERANCE = 4;
 
+    private int size;
+
+
+
     private boolean isEraserActive = false;
 
     public PaintLine(Context context, AttributeSet attr) {
@@ -166,5 +170,10 @@ public class PaintLine extends View implements OnTouchListener {
         paths.clear();
         invalidate();
     }
+
+    public void line(int size){
+        m_Paint.setStrokeWidth(size);
+    }
+
 
 }

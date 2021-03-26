@@ -18,16 +18,18 @@
 
     <project.assignment.PaintLine
         android:id="@+id/rlPaint"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="408dp"
+        android:layout_height="365dp"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/updatePropertyPaint"
-        app:layout_constraintTop_toBottomOf="@+id/usernameHome" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameHome"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp" />
 
     <LinearLayout
         android:id="@+id/updatePropertyPaint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="405dp"
+        android:layout_height="56dp"
         android:orientation="horizontal"
         android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonClear"
@@ -64,5 +66,41 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="122dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatePropertyPaint"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/thick1" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="122dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915"
+        app:srcCompat="@drawable/thick2" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="122dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915"
+        app:srcCompat="@drawable/thick3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ public class DinhFragment extends Fragment {
     private TextView tvFullName ;
     PaintLine drawing;
     Button buttonClear, buttonGreen, buttonBlue, buttonPink;
+    ImageButton button1, button2,button3;
 
     @Nullable
     @Override
@@ -30,6 +32,10 @@ public class DinhFragment extends Fragment {
         buttonGreen = view.findViewById(R.id.buttonGreen);
         buttonBlue = view.findViewById(R.id.buttonBlue);
         buttonPink = view.findViewById(R.id.buttonPink);
+        button1 = view.findViewById(R.id.button1);
+        button2 = view.findViewById(R.id.button2);
+        button3 = view.findViewById(R.id.button3);
+
         drawing = view.findViewById(R.id.rlPaint);
         drawing.setStrokeColor(requireActivity().getColor(R.color.black));
     }
@@ -50,7 +56,7 @@ public class DinhFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 drawing.setStrokeColor(requireActivity().getColor(R.color.green));
-                drawing.setStrokeWith(5);
+
             }
         });
 
@@ -58,7 +64,7 @@ public class DinhFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 drawing.setStrokeColor(requireActivity().getColor(R.color.blue));
-                drawing.setStrokeWith(20);
+
             }
         });
 
@@ -66,9 +72,29 @@ public class DinhFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 drawing.setStrokeColor(requireActivity().getColor(R.color.pink));
-                drawing.setStrokeWith(40);
+
             }
         });
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawing.setStrokeWith(5);
+            }
 
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawing.setStrokeWith(20);
+            }
+
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawing.setStrokeWith(40);
+            }
+
+        });
     }
 }
