@@ -8,9 +8,9 @@
 
     <com.github.rongi.rotate_layout.layout.RotateLayout
         android:id="@+id/rotateLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:angle="150"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        app:angle="-45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
@@ -18,7 +18,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="@string/firt_name"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -28,8 +27,8 @@
 
     <com.github.rongi.rotate_layout.layout.RotateLayout
         android:id="@+id/rotateLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
         app:angle="45"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,18 +46,21 @@
 
     <ImageView
         android:id="@+id/imageEarth"
-        android:layout_width="380dp"
-        android:layout_height="458dp"
+        android:layout_width="355dp"
+        android:layout_height="352dp"
         android:src="@drawable/earth"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="149dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/startAnimation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
         android:background="@color/light_blue"
         android:text="Start"
         android:textColor="@color/white"
@@ -71,7 +73,7 @@
         android:id="@+id/stopAnimation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="4dp"
         android:background="@color/light_blue"
         android:text="Stop"
@@ -90,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178"
+        app:layout_constraintVertical_bias="0.328"
         app:srcCompat="@drawable/moon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
